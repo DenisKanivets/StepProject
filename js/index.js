@@ -116,35 +116,35 @@ let newImages2Class = [
     "webDesign"
 ];
 
-// document.getElementById('loadMoreWorks').addEventListener('click', function addNewImages1() {
-//     document.getElementById('loading').style.opacity = '1';
-//     document.getElementById('loadMoreWorks').style.opacity = '0';
-//     setTimeout(function () {
-//         for (let i = 0; i < newImages1.length; i++) {
-//             let img1 = document.createElement('img');
-//             img1.src = newImages1[i];
-//             img1.className = newImages1Class[i];
-//             document.getElementById('works').appendChild(img1);
-//         }
-//         document.getElementById('loadMoreWorks').removeEventListener('click', addNewImages1);
-//         document.getElementById('loading').style.opacity = '0';
-//         document.getElementById('loadMoreWorks').style.opacity = '1';
-//     }, 2000);
-//     document.getElementById('loadMoreWorks').addEventListener('click', function addNewImages2() {
-//         document.getElementById('loading').style.opacity = '1';
-//         document.getElementById('loadMoreWorks').style.opacity = '0';
-//         setTimeout(function () {
-//             for (let j = 0; j < newImages1.length; j++) {
-//                 let img2 = document.createElement('img');
-//                 img2.src = newImages2[j];
-//                 img2.className = newImages2Class[j];
-//                 document.getElementById('works').appendChild(img2);
-//             }
-//             document.getElementById('loadMoreWorks').removeEventListener('click', addNewImages2);
-//             document.getElementById('loading').style.opacity = '0';
-//         }, 2000)
-//     });
-// });
+document.getElementById('loadMoreWorks').addEventListener('click', function addNewImages1() {
+    document.getElementById('loading').style.opacity = '1';
+    document.getElementById('loadMoreWorks').style.opacity = '0';
+    setTimeout(function () {
+        for (let i = 0; i < newImages1.length; i++) {
+            let img1 = document.createElement('img');
+            img1.src = newImages1[i];
+            img1.className = newImages1Class[i];
+            document.getElementById('works').appendChild(img1);
+        }
+        document.getElementById('loadMoreWorks').removeEventListener('click', addNewImages1);
+        document.getElementById('loading').style.opacity = '0';
+        document.getElementById('loadMoreWorks').style.opacity = '1';
+    }, 2000);
+    document.getElementById('loadMoreWorks').addEventListener('click', function addNewImages2() {
+        document.getElementById('loading').style.opacity = '1';
+        document.getElementById('loadMoreWorks').style.opacity = '0';
+        setTimeout(function () {
+            for (let j = 0; j < newImages1.length; j++) {
+                let img2 = document.createElement('img');
+                img2.src = newImages2[j];
+                img2.className = newImages2Class[j];
+                document.getElementById('works').appendChild(img2);
+            }
+            document.getElementById('loadMoreWorks').removeEventListener('click', addNewImages2);
+            document.getElementById('loading').style.opacity = '0';
+        }, 2000)
+    });
+});
 
 
 //fifthSection, filter images when button click
